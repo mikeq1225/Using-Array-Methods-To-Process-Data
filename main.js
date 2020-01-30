@@ -52,6 +52,26 @@ document.querySelector("#answer4").innerHTML = woodTitle
 let eight = items.filter(function(item5) {
   return item5.materials.length >= 8
 })
+let two = eight
+  .map(function(item6) {
+    return (
+      item6.title +
+      " has " +
+      item6.materials.length +
+      " materials \n \n" +
+      item6.materials.join("\n") +
+      "\n \n"
+    )
+  })
+  .join("")
 
-console.log(eight)
-// Q6 - use .reduce
+//console.log(two)
+document.querySelector("#answer5").innerHTML = two
+
+//
+// Q6 - use .filter
+let sellers = items.filter(function(item6) {
+  return item6.who_made == "i_did"
+})
+document.querySelector("#answer6").innerHTML =
+  sellers.length + " were made by their sellers"
