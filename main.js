@@ -73,5 +73,5 @@ document.querySelector("#answer5").innerHTML = two
 let sellers = items.filter(function(item6) {
   return item6.who_made == "i_did"
 })
-document.querySelector("#answer6").innerHTML =
-  sellers.length + " were made by their sellers"
+var answer = sellers.length + " were made by their sellers"
+document.querySelector("#answer6").innerHTML = answer
