@@ -40,7 +40,7 @@ let wood = items.filter(function(item4) {
 })
 let woodTitle = wood
   .map(function(w) {
-    return w.title + "\n"
+    return w.title + " is made of wood" + "\n"
   })
   .join("")
 
